@@ -6,20 +6,29 @@ public class Main {
 //        SayHello sayHello = new SayHelloImpl();
 //        sayHello.sayHello();
 
-        SayHello i = new SayHello() {
-            @Override
-            public void sayHello() {
-                System.out.println("Hello..This is anonymous class");
-            }
-        };
-        i.sayHello();
+//        SayHello i = new SayHello() {
+//            @Override
+//            public void sayHello() {
+//                System.out.println("Hello..This is anonymous class");
+//            }
+//        };
+//        i.sayHello();
+//
+//        SayHello i2 = new SayHello() {
+//            @Override
+//            public void sayHello() {
+//                System.out.println("Hello..This is anonymous class second implementation");
+//            }
+//        };
+//        i2.sayHello();
 
-        SayHello i2 = new SayHello() {
-            @Override
-            public void sayHello() {
-                System.out.println("Hello..This is anonymous class second implementation");
-            }
+
+        //using interface using lambda
+
+        SayHello s = () -> {
+            System.out.println("Hello..This is using lambda");
         };
-        i2.sayHello();
+
+        s.sayHello();
     }
 }
