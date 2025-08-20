@@ -13,5 +13,13 @@ public class Main {
             }
         };
         i.sayHello();
+
+        SayHello i2 = new SayHello() {
+            @Override
+            public void sayHello() {
+                System.out.println("Hello..This is anonymous class second implementation");
+            }
+        };
+        i2.sayHello();
     }
 }
