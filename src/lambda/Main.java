@@ -28,5 +28,9 @@ public class Main {
         SayHello s = () -> System.out.println("Hello..This is using lambda");
 
         s.sayHello();
+
+        SayHello s2 = () -> System.out.println("Hello..This is using lambda second implementation");
+
+        s2.sayHello();
     }
 }
