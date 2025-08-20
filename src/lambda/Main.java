@@ -25,9 +25,7 @@ public class Main {
 
         //using interface using lambda
 
-        SayHello s = () -> {
-            System.out.println("Hello..This is using lambda");
-        };
+        SayHello s = () -> System.out.println("Hello..This is using lambda");
 
         s.sayHello();
     }
