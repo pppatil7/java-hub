@@ -16,5 +16,17 @@ public class StreamApiDemo {
         List<Integer> newNumbers = numbers.stream().map(i -> i * i).collect(Collectors.toList());
 
         System.out.println(newNumbers);
+
+
+        names.stream().forEach(
+                e -> {
+                    System.out.println(e);
+                }
+        );
+
+
+        newNames.stream().forEach(System.out::println);
+
+
     }
 }
