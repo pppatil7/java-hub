@@ -1,6 +1,5 @@
 package streamapi;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -11,5 +10,11 @@ public class StreamApiDemo {
 
         List<String> newNames = names.stream().filter(e -> e.startsWith("A")).collect(Collectors.toList());
         System.out.println(newNames);
+
+        List<Integer> numbers = List.of(12, 14, 17, 20);
+
+        List<Integer> newNumbers = numbers.stream().map(i -> i * i).collect(Collectors.toList());
+
+        System.out.println(newNumbers);
     }
 }
