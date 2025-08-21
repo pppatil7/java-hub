@@ -11,7 +11,7 @@ public class StreamApiDemo {
         List<String> newNames = names.stream().filter(e -> e.startsWith("A")).collect(Collectors.toList());
         System.out.println(newNames);
 
-        List<Integer> numbers = List.of(12, 14, 17, 20);
+        List<Integer> numbers = List.of(100, 60, 90, 14, 17, 12, 20);
 
         List<Integer> newNumbers = numbers.stream().map(i -> i * i).collect(Collectors.toList());
 
@@ -26,6 +26,10 @@ public class StreamApiDemo {
 
 
         newNames.stream().forEach(System.out::println);
+
+        //sorted
+
+        numbers.stream().sorted().forEach(System.out::println);
 
 
     }
