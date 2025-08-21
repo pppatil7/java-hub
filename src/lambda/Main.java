@@ -32,5 +32,11 @@ public class Main {
         SayHello s2 = () -> System.out.println("Hello..This is using lambda second implementation");
 
         s2.sayHello();
+
+        Summable summable = (a, b) -> a + b;
+
+        System.out.println(summable.sum(1, 2));
+
+
     }
 }
