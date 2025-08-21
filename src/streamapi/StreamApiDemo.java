@@ -32,5 +32,10 @@ public class StreamApiDemo {
         numbers.stream().sorted().forEach(System.out::println);
 
 
+        Integer minimum = numbers.stream().min((x, y) -> x.compareTo(y)).get();
+        System.out.println("miniumum: " + minimum);
+
+        Integer maximum = numbers.stream().max((x, y) -> x.compareTo(y)).get();
+        System.out.println("maximum: " + maximum);
     }
 }
